@@ -6,13 +6,15 @@
   >
     <div class="navbar-brand">
       <nuxt-link class="navbar-item" to="/">
-        <site-logo v-if="$siteConfig.logo === 'logo-component'" />
-        <img
-          v-else
-          :src="$siteConfig.logo"
-          :alt="$siteConfig.siteName"
-          class="logo"
-        />
+        <svg height="40" width="300">
+          <style>
+            .heavy {
+              font: bold 30px sans-serif;
+            }
+          </style>
+          <text x="20" y="35" fill="black" class="heavy">Ahmed Abdul-Aziz</text>
+          Ahmed Abdul-Aziz.
+        </svg>
       </nuxt-link>
       <hamburger-button @click="active = !active" />
     </div>
@@ -35,7 +37,7 @@
             :href="item.link"
             :to="item.link"
             :target="item.target ? item.target : '_self'"
-            rel="{{item.link.startsWith('http') ? 'noopener noreferrer' : '' }}"
+            :rel="item.link.startsWith('http') ? 'noopener noreferrer' : ''"
           >
             {{ item.name }}
           </component>
