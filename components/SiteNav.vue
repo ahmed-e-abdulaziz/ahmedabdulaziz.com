@@ -35,6 +35,7 @@
             :href="item.link"
             :to="item.link"
             :target="item.target ? item.target : '_self'"
+            rel="{{item.link.startsWith('http') ? 'noopener noreferrer' : '' }}"
           >
             {{ item.name }}
           </component>
