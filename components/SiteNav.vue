@@ -76,7 +76,13 @@ export default {
   height: auto;
 }
 
-.navbar-menu a {
-  display: block;
+.navbar-menu {
+  a {
+    display: block;
+    color: black;
+  }
+  a:hover {
+    color: $primary;
+  }
 }
 </style>
