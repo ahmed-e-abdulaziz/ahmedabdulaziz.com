@@ -5,7 +5,7 @@
     aria-label="main navigation"
   >
     <div class="navbar-brand">
-      <nuxt-link class="navbar-item" to="/">
+      <nuxt-link class="navbar-item" to="/" aria-label="Ahmed Abdul-Aziz">
         <svg height="40" width="300">
           <style>
             .heavy {

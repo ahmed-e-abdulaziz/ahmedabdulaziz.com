@@ -11,6 +11,7 @@
       <input
         id="search-input"
         v-model="query"
+        aria-label="Query Search"
         autocomplete="off"
         :class="{
           input: true
@@ -26,7 +27,7 @@
             :key="match.slug"
             @click="toggleSearchBar()"
           >
-            <nuxt-link :to="`/${match.slug}`">
+            <nuxt-link :to="`/${match.slug}`" :aria-label="match.title">
               {{ match.title }}
             </nuxt-link>
             <small class="match-snippet" v-html="match.snippet"></small>

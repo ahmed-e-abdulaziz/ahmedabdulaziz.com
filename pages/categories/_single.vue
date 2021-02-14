@@ -23,6 +23,7 @@
               'panel-block': true,
               'is-active': cat.slug === $route.params.single
             }"
+            :aria-label="cat.slug"
           >
             {{ cat.name }}
           </nuxt-link>

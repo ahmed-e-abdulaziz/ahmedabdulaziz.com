@@ -1,7 +1,11 @@
 <template>
   <div class="card">
     <div class="card-image">
-      <component :is="link ? 'nuxt-link' : 'span'" :to="link">
+      <component
+        :is="link ? 'nuxt-link' : 'span'"
+        :to="link"
+        :aria-label="title ? title : ''"
+      >
         <figure :class="`image is-${imageRatioClass}`">
           <opti-image
             v-if="image"
@@ -19,12 +23,12 @@
     <div class="card-content">
       <div class="media">
         <div class="media-content">
-          <nuxt-link :to="link">
+          <nuxt-link :to="link" :aria-label="title ? title : 'loading link'">
             <h3
               :class="
                 `title
                 is-5
-                has-text-weight-light
+                has-text-weight-medium
                 ${title ? '' : 'empty-content-placeholder'}`
               "
             >
@@ -79,7 +83,7 @@ export default {
 </script>
 <style scoped lang="scss">
 .subtitle {
-  opacity: 0.5;
+  opacity: 1;
   font-size: 0.8rem;
 }
 .empty-content-placeholder {
