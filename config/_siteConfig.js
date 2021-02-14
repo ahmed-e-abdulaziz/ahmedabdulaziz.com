@@ -9,9 +9,9 @@ import theCMS from '../cms/netlify/cms'
  * General Site configurations
  */
 export default {
-  siteName: 'Ahmed Abdul-Aziz Tech Blog',
+  siteName: 'Ahmed Abdul-Aziz Blog',
   tagline:
-    'A blog about Software Development, Software Architecture and new technologies',
+    'A blog about software development, software architecture and new technologies',
   featureImage: '/uploads/home-hero.jpg',
   logo: 'logo-component', // 'logo-component', // or '/logo.svg' for regular image
   googleAnalytics: {
