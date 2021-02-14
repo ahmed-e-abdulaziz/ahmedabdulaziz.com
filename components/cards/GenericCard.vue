@@ -10,6 +10,7 @@
             :width="imageRatio[0]"
             :height="imageRatio[1]"
             :sizes="`(min-width: 768px) ${100 / $siteConfig.posts.perRow}vw`"
+            :alt="title"
           />
           <loading-spinner position="absolute" />
         </figure>
