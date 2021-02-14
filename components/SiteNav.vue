@@ -1,4 +1,3 @@
-/* eslint-disable vue/html-indent */
 <template>
   <nav
     class="navbar has-shadow is-fixed-top"
