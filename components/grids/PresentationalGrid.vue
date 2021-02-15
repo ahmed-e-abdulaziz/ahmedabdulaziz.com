@@ -28,7 +28,7 @@ export default {
         return []
       }
     },
-    bottomLoader: { type: Boolean, default: false },
+    bottomLoader: { type: Boolean, default: true },
     theme: {
       type: String,
       default: 'boxes'
