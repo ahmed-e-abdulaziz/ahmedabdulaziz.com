@@ -9,10 +9,10 @@
     />
     <div class="hero-body">
       <div class="container">
-        <h1 class="title">
+        <h1 class="title animated fadeInUp">
           {{ title }}
         </h1>
-        <h2 class="subtitle">
+        <h2 class="subtitle animated fadeInUp slower">
           {{ subtitle }}
         </h2>
       </div>
@@ -82,7 +82,7 @@ export default {
 }
 .opti-image-loaded {
   opacity: 0.12;
-  animation: blurIn 4.5s ease;
+  animation: blurIn 2.5s ease;
 }
 </style>
 <style lang="scss">
@@ -110,7 +110,7 @@ export default {
   }
   .opti-image-loaded {
     opacity: 0.12;
-    animation: blurInGrayscale 4.5s ease;
+    animation: blurInGrayscale 2.5s ease;
   }
 }
 .hero-theme-dark,

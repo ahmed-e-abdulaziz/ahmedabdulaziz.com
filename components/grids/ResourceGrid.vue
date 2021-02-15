@@ -6,7 +6,6 @@
     <presentational-grid
       v-else
       :items="resources"
-      :bottom-loader="!allLoaded && firstPageLoaded"
       :theme="theme"
       :per-row="perRow"
       @atEnd="loadMore()"
@@ -15,6 +14,9 @@
         <slot :item="item"></slot>
       </template>
     </presentational-grid>
+    <div v-if="!allLoaded && firstPageLoaded" class="loading-posts">
+      <loading-spinner />
+    </div>
   </div>
 </template>
 
@@ -31,6 +33,7 @@ export default {
     theme: { type: String, default: 'blocks' },
     perRow: { type: Number, default: 3 },
     number: { type: Number, default: 0 },
+    bottomLoader: { type: Boolean, default: true },
     order: { type: String, default: 'DESC' },
     category: {
       type: Array,
