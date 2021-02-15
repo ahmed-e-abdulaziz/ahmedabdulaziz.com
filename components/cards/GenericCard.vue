@@ -90,7 +90,7 @@ export default {
   background: transparent;
   color: transparent;
   position: relative;
-  min-height: 1.125em;
+  min-height: 1.14em;
   @media (max-width: 768px) {
     min-height: 1.6em;
   }
