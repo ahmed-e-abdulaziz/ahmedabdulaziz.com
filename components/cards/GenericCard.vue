@@ -90,7 +90,10 @@ export default {
   background: transparent;
   color: transparent;
   position: relative;
-  height: 1em;
+  min-height: 1.125em;
+  @media (max-width: 768px) {
+    min-height: 1.6em;
+  }
   &:before {
     transform-origin: left;
     content: '';
