@@ -27,8 +27,8 @@ export default {
   }
 }
 .spinner-wrapper {
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
 }
 .spinner-position-absolute {
   width: 0;
@@ -41,12 +41,12 @@ export default {
   }
 }
 .spinner {
-  opacity: 0.2;
+  opacity: 0.4;
   background: $dark-invert;
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  border: $dark 4px solid;
+  border: $dark 6px solid;
   border-left-color: transparent;
   border-right-color: transparent;
   animation: spinner 1.5s infinite;
