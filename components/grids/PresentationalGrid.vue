@@ -11,7 +11,7 @@
         <slot :item="item"></slot>
       </div>
     </div>
-    <div v-if="bottomLoader" class="loading-posts">
+    <div v-if="true" class="loading-posts">
       <loading-spinner />
     </div>
     <intersection-observer @view="$emit('atEnd')" />
@@ -72,7 +72,7 @@ export default {
 </style>
 <style lang="scss">
 .loading-posts .spinner-wrapper {
-  margin: 30px auto 0 auto;
+  margin: 0px auto 0 auto;
 }
 .grid-theme-grid .items,
 .grid-theme-image-grid .items {

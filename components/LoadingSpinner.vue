@@ -1,6 +1,6 @@
 <template functional>
   <div :class="`spinner-wrapper spinner-position-${props.position}`">
-    <div class="spinner"></div>
+    <div class="spinner spinner5"></div>
   </div>
 </template>
 
@@ -18,37 +18,54 @@ export default {
   margin: 0;
   padding: 0;
 }
-@keyframes spinner {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+// SPINNERS STYLES
+.spinner {
+  // Common styles
+  width: 14rem;
+  height: 0.5rem;
+  // Individual styles
+  &.spinner5 {
+    overflow: hidden;
+    position: relative;
+    height: 0.5rem;
+    background: rgba($white, 0.25);
+    &::before {
+      content: '';
+      position: absolute;
+      left: -130%;
+      width: 100%;
+      height: 100%;
+      background: rgba($black, 0.3);
+      animation: spinner 0.5s linear infinite;
+    }
   }
 }
+
+// ANIMATIONS
+@keyframes spinner {
+  0% {
+    left: -130%;
+    background: rgba($black, 0.3);
+  }
+  100% {
+    left: 130%;
+    background: rgba($black, 0.3);
+  }
+}
+
 .spinner-wrapper {
-  width: 50px;
-  height: 50px;
+  width: 14rem;
+  height: 0.5rem;
 }
 .spinner-position-absolute {
   width: 0;
   height: 0;
   .spinner {
     position: absolute;
-    left: calc(50% - 37.5px);
-    top: calc(50% - 37.5px);
+    left: calc(50%);
+    top: calc(50%);
     transform: translate(-50%, -50%);
   }
-}
-.spinner {
-  opacity: 0.4;
-  background: $dark-invert;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: $dark 6px solid;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  animation: spinner 1.5s infinite;
 }
 </style>

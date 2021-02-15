@@ -39,7 +39,7 @@ export default {
 
 <style>
 .page-wrapper {
-  min-height: calc(101vh - 65px);
+  min-height: calc(92.25vh - 65px);
 }
 .home-page .under-subtitle {
   border-top: none;
