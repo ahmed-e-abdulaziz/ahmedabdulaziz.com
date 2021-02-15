@@ -9,19 +9,12 @@
     />
     <div class="hero-body">
       <div class="container">
-        <h1 class="title animated fadeInUp">
+        <h1 class="title">
           {{ title }}
         </h1>
-        <h2 class="subtitle animated fadeInUp slower">
+        <h2 class="subtitle">
           {{ subtitle }}
         </h2>
-        <br />
-        <div
-          v-if="$slots.default"
-          class="under-subtitle animated fadeInDown slower"
-        >
-          <slot />
-        </div>
       </div>
     </div>
   </section>
