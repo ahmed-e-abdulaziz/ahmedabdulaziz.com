@@ -7,6 +7,5 @@ export default () => {
     if (err) {
       return console.error(err)
     }
-    console.log('Netlify admin generated in dist')
   })
 }
