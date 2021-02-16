@@ -4,6 +4,13 @@
 [build.environment]
   NODE_VERSION = "11"
 [[headers]]
+  for = "*.html"
+  [headers.values]
+    cache-control = '''
+    max-age=0,
+    no-cache,
+    no-store,
+    must-revalidate'''
   for = "/*"
   [headers.values]
     cache-control = '''
