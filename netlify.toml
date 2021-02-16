@@ -1,20 +1,24 @@
 [build]
-  publish = "dist"
-  command = "npm run generate"
+publish = "dist"
+command = "npm run generate"
 [build.environment]
-  NODE_VERSION = "11"
+NODE_VERSION = "11"
 [[headers]]
-  for = "*.html"
-  [headers.values]
-    cache-control = '''
+for = "*.html"
+[headers.values]
+cache-control = '''
     max-age=0,
     no-cache,
     no-store,
     must-revalidate'''
-  for = "/*"
-  [headers.values]
-    cache-control = '''
+Content-Security-Policy = "default-src 'self';"
+X-Frame-Options = "DENY"
+[[headers]]
+for = "/*"
+[headers.values]
+cache-control = '''
     max-age=31536000,
 	  public, 
     no-transform'''
-
+Content-Security-Policy = "default-src 'self';"
+X-Frame-Options = "DENY"
