@@ -20,5 +20,5 @@ cache-control = '''
     max-age=31536000,
 	  public, 
     no-transform'''
-Content-Security-Policy = "default-src 'self';"
+Content-Security-Policy = "default-src 'self'; style-src 'unsafe-inline';"
 X-Frame-Options = "DENY"
