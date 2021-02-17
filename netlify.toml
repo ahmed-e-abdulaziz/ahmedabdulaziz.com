@@ -11,7 +11,7 @@ cache-control = '''
     no-cache,
     no-store,
     must-revalidate'''
-Content-Security-Policy = "default-src 'self' https://ahmedabdulaziz.com/ https://www.ahmedabdulaziz.com/;"
+Content-Security-Policy = "default-src 'self' https://ahmedabdulaziz.com/ https://www.ahmedabdulaziz.com/"
 X-Frame-Options = "DENY"
 [[headers]]
 for = "/*"
