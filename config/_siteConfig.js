@@ -53,7 +53,7 @@ export default {
   disqus: {
     on: true,
     loadingStrategy: 'button', // Options: onload, lazy, button
-    siteShortName: 'blog-danielkelly-io' // 'blog-danielkelly-io'
+    siteShortName: 'ahmedabdulaziz-com.disqus.com' // 'ahmedabdulaziz-com.disqus.com'
   },
 
   // Newsletter Subscribe
