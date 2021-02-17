@@ -99,7 +99,10 @@ import QuoteCard from '~/components/cards/QuoteCard'
 export default {
   head() {
     return {
-      title: `About | ${this.$siteConfig.siteName}`
+      title: `About | ${this.$siteConfig.siteName}`,
+      htmlAttrs: {
+        lang: 'en'
+      }
     }
   },
   components: { QuoteCard }

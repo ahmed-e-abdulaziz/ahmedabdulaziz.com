@@ -63,7 +63,10 @@ import ContactForm from '~/components/ContactForm'
 export default {
   head() {
     return {
-      title: `Contact | ${this.$siteConfig.siteName}`
+      title: `Contact | ${this.$siteConfig.siteName}`,
+      htmlAttrs: {
+        lang: 'en'
+      }
     }
   },
   components: { ContactForm }
