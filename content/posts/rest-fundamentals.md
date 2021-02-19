@@ -11,7 +11,7 @@ REST has been a cornerstone of backend programming for quite a while now. Howeve
 
 ## Why use REST?
 
-REST enforces a good separation of concerns between clients and servers the more our REST is mature enough the more we can evolve our client (frontend) or server (backend) with no issues with scalability or coupling.
+REST enforces a good separation of concerns between clients and servers. The more our REST endpoints are mature the more we can evolve our client (frontend) or server (backend) with no issues with scalability or coupling.
 
 ## What is REST?
 
