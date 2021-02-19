@@ -74,16 +74,15 @@ Having a uniform interface is a must in REST architectural style, this enables e
 
    ```json
     {
-      "employeeId": 1,
-      "firstName": "Lokesh",
-      "lastName": "Gupta",
-      "email": "howtodoinjava@gmail.com",
+      "id": 1,
+      "name": "Ahmed Abdulaziz",
+      "email": "ahmed.ehab.abdulaziz@gmail.com",
       "_links": {
           "self": {
-              "href": "http://localhost:8080/1"
+              "href": "https://ahmedabdulaziz.com/users/1"
           },
           "report": {
-              "href": "http://localhost:8080/employees/1/report"
+              "href": "https://ahmedabdulaziz.com/users/1/report"
           }
       }
     }
