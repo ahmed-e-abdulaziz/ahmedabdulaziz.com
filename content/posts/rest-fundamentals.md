@@ -36,7 +36,7 @@ REST advocates statelessness, which means that the server doesn't keep the state
 
 ### Caching
 
-If a request is following REST, the request must announce detail if it's cacheable or not. This leads to a greatly reduced number of requests.
+If a request is following REST, the request must detail if it's cacheable or not. Applying caching to requests in client side and server side leads to a greatly reduced number of requests. Or even the elimination of requests altogether over a period of time.
 
 ### Layers
 
@@ -46,27 +46,27 @@ If a client is connecting to a server and a new layer is introduced (e.g. proxy/
 
 Having a uniform interface is a must in REST architectural style, this enables each part (client/server) to change side over time separately from each other. There are four rules to follow to fully have a uniform interface between clients and servers.
 
-1. Resource identification in requests
+1. **Resource identification in requests**
 
     Resources (endpoints) should be identified in the request. Such as using URIs. For example for the users resource it should be stated in the HTTP URI that the users are what is required here like this  `https://example.com/users/`.
 
     The resource for the server side is separate from the representations that are returned to the client. So this user can be endpoint can actually be represented in the backend by a multitude of resources and entities but this is coupled from the client/frontend.
 
-2. Resource manipulation through representations
+2. **Resource manipulation through representations**
 
     When a client receives a resource (with headers and other metadata) it has enough information to modify or delete the resource. So if the frontend retrieves users from `https://example.com/users/` it can follow a simple structure to be able to manipulate any user in the list without asking the backend how to request a type of this change.
 
-    In HTTP-based REST endpoints, this is achieved by HTTP verbs such as GET to retrieve, POST to create a new resource, PUT to create/update a whole resource, PATCH to modify a part of a resource, DELETE to delete a resource, and so on. This is accompanied by other data that can help in this like for example returning each user ID
+    In HTTP-based REST endpoints, this is achieved by HTTP verbs such as GET to retrieve, POST to create a new resource, PUT to create/update a whole resource, PATCH to modify a part of a resource, DELETE to delete a resource, and so on. This is accompanied by other data that can help in this like for example returning each user ID.
 
-3. Self-descriptive messages
+3. **Self-descriptive messages**
 
     This means the response message should describe itself with no requirement to go back to the backend to retrieve the meaning of the message. If a file is returned in a binary format, for example, an attribute must be attached to explain the type of the file. If the response is in JSON an attribute must exist to explain it's in JSON.
 
-    In HTTP-based REST APIs, `https://example.com/annual-report/` the response must have a media type header that explains that the returning blob is of pdf format like this `Content-Type: application/pdf`.
+    In HTTP-based REST APIs, `https://example.com/annual-report/` the response must have a media type header that explains that the returning blob is a pdf like this `Content-Type: application/pdf`.
 
     Also in HTTP, this means the response should have a status code that describes the state of this response whether it's an error or a success one. Like response 200 (OK) or 400 (BAD REQUEST).
 
-4. Hypermedia as the engine of application state (HATEOAS)
+4. **Hypermedia as the engine of application state (HATEOAS)**
 
    HATEOAS simply requires that when firstly requesting a URI for a REST endpoint, the response should include links provided by the backend to dynamically discover all available resources in the response.
 
