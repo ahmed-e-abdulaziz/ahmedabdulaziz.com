@@ -20,7 +20,7 @@ export default {
   },
   mainMenu: [
     {
-      name: 'About Me',
+      name: 'About',
       link: '/about'
     },
     {

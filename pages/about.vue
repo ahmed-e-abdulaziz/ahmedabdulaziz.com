@@ -1,6 +1,10 @@
 <template>
   <div id="about-page" class="page-wrapper about-page content-page">
-    <site-hero title="About Me" image="/uploads/about-hero.jpg"></site-hero>
+    <site-hero
+      title="Ahmed Ehab Abdul-Aziz"
+      subtitle="A software development enthusiast who is fond of backend, frontend and anything in between."
+      image="/uploads/about-hero.jpg"
+    ></site-hero>
     <main-section theme="sidebar-right">
       <template v-slot:default>
         <div class="content">
