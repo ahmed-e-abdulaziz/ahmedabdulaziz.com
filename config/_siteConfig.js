@@ -15,7 +15,7 @@ export default {
   featureImage: '/uploads/home-hero.jpg',
   logo: 'logo-component', // 'logo-component', // or '/logo.svg' for regular image
   googleAnalytics: {
-    on: false,
+    on: true,
     id: process.env.GOOGLE_ANALYTICS_ID
   },
   mainMenu: [
@@ -52,7 +52,7 @@ export default {
   // Disqus
   disqus: {
     on: true,
-    loadingStrategy: 'button', // Options: onload, lazy, button
+    loadingStrategy: 'lazy', // Options: onload, lazy, button
     siteShortName: 'ahmedabdulaziz-com' // 'ahmedabdulaziz-com.disqus.com'
   },
 
