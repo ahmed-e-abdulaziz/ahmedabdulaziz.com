@@ -47,7 +47,8 @@ This means we are not reaping the benefit of REST endpoints which is the evoluti
 With HATEOAS we can actually keep the frontend running as is while changing all these different APIs easily.
 HATEOAS works by defining the actions and their endpoints in the response of any entity, thus we don't hardcode every API in the frontend.
 
-Originally, the response for `GET /users/` to get a list of users looked like this (assuming we have a single user in the backend) in a HATEOAS manner:
+It is applied by adding a list of actions with their links to the entity so we can get the required link from the response to perform our action.
+Originally, the response for `GET /users/` to get a list of users would look like this (assuming we have a single user in the backend) with HATEOAS:
 
 ``` json
 [
@@ -115,7 +116,7 @@ Another step we can do is to add the HTTP method used for each link to further r
 }
 ```
 
-That can lead to for example changing the PUT for the update action to PATCH for example without breaking any changes. Nonetheless, this is not HATEOAS compliant.
+That can lead to for example changing the PUT for the update action to PATCH for example without breaking any changes. Nonetheless, that last step is not HATEOAS compliant.
 
 The recommended way to do this is to keep the older structure where there is only `"href"` in the action and send an `OPTIONS` request before sending the request to get the required HTTP method, both ways are favored by some people. As a matter of fact, **Roy T. Fielding** the creator of REST [was one of the creators of the OPTIONS request](https://lists.w3.org/Archives/Public/ietf-http-wg-old/1997SepDec/0376.html).
 
