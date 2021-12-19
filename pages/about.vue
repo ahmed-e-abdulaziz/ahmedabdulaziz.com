@@ -42,36 +42,30 @@
             </a>
           </p>
 
-          <h2>Skills</h2>
+          <h2>Skills And Education</h2>
           <p>
-            <strong> Technical Experience:</strong> Java (SE/EE), Hibernate/JPA,
-            Spring Core, Spring MVC, Spring Boot, Spring Data, Spring Cloud,
-            Spring Security, Docker, Jenkins, Apache HTTPD, Linux,
-            JSF/PrimeFaces, JSP, Angular 2+, HTML/CSS, SQL, PostgreSQL, MySQL,
-            Oracle DB, Git, Jenkins, Maven, Mockito, PowerMock, TestNG, JUnit,
-            Jersey, RESTful, JavaScript, Flyway, Liquibase.
+            <strong>Experienced in:</strong> Java (SE/EE), Hibernate/JPA,
+            Kubernetes, Helm, Spring Core, Spring MVC, Spring Webflux (Reactor),
+            Spring Boot, Spring Data, Spring Cloud, Spring Security, Docker,
+            Redis, Jenkins, Kubernetes, Apache HTTPD, Linux, JSF/PrimeFaces,
+            JSP, Angular 2+, HTML/CSS, SQL, PostgreSQL, MySQL, Oracle DB, Git,
+            Maven, Mockito, PowerMock, TestNG, JUnit, RESTful, JavaScript,
+            Prometheus, Grafana, PromQL, Cortex, Liquibase.
           </p>
 
           <p>
-            <strong>Technical Training:</strong> Spring Webflux (Reactor),
-            Consul, Redis, Kubernetes, AWS, Vue.js.
+            <strong>Trained in:</strong> Consul, AWS, Vue.js, Keycloak, Jest.
           </p>
           <p>
             <strong>Software Engineering:</strong> UML, OOP, TDD, MVC, Agile
-            Methodology (Scrum/Kanban), OWASP, OAuth 2.0, Microservices, Design
-            Patterns, Database Design, Cloud, Web Services, Reactive
-            Programming, Internet of Things, DevOps.
+            Methodology (Scrum/Kanban), Observability, OWASP, OAuth 2.0,
+            Microservices, Design Patterns, Database Design, Cloud, Web
+            Services, Reactive Programming, Internet of Things, DevOps.
           </p>
           <p>
-            <strong>Languages:</strong> Fluent English, intermediate German
-            (B1), Arabic as my native language.
+            <strong>Languages:</strong> Fluent English. Intermediate
+            German(B1+). Native Arabic.
           </p>
-          <p>
-            <strong>Personal Qualities:</strong> communication, leadership,
-            innovation, fast learner, willingness to learn, detail-oriented,
-            team player, and enjoys programming.
-          </p>
-          <h2>Education</h2>
           <p>
             <strong>College:</strong> BSc. in CS, Faculty of Computer and
             Information, Helwan University, 2017, GPA 3.33 (B+), Very Good with
@@ -80,7 +74,18 @@
           <h2>Experience</h2>
           <p>
             <strong>
-              Senior Full-Stack Engineer at Segmatek (Nov 2019 – Present):
+              Senior Software Engineer at Autonomic (A Ford Company) | Andela
+              (June 2021 - Present):
+            </strong>
+            I was hired as a remote full-time software engineer at Autonomic
+            through Andela, where I worked in a distributed US-based team that
+            spans 5 countries in 3 different continents to develop the
+            observability stack to give the whole company useful insights into
+            different services.
+          </p>
+          <p>
+            <strong>
+              Senior Full-Stack Engineer at Segmatek (Nov 2019 - Present):
             </strong>
             My responsibilities included architecting, developing, unit testing,
             deployment of both frontend and backend services, communicating with
@@ -93,7 +98,7 @@
 
           <p>
             <strong>
-              Java Software Consultant at Infor (August 2019 – Nov 2019):
+              Java Software Consultant at Infor (August 2019 - Nov 2019):
             </strong>
             I maintained and enhanced applications on an ongoing basis and
             ensured that unit tests are performed correctly using Java and
@@ -102,7 +107,7 @@
           </p>
           <p>
             <strong>
-              Java Software Engineer at DXC (March 2018 – August 2019):
+              Java Software Engineer at DXC (March 2018 - August 2019):
             </strong>
             I engineered and developed software applications for DXC Technology
             (formerly HP Enterprise) where I work in a multinational team to
@@ -112,7 +117,7 @@
           </p>
           <p>
             <strong>
-              Junior Java Developer at Marased (July 2017 – March 2018):
+              Junior Java Developer at Marased (July 2017 - March 2018):
             </strong>
             I maintained and developed new features to support the projects I am
             enrolled in at Marased. I mainly worked as a Junior Java Developer
@@ -120,13 +125,13 @@
             Hibernate to finish required tasks within specific timeframes.
           </p>
           <p>
-            <strong> Trainee at HCI LAB (March 2016 – April 2016):</strong>
+            <strong> Trainee at HCI LAB (March 2016 - April 2016):</strong>
             Mainly Java (OpenCV) tasks, most notably the Automatic correction
             system. It scans and recognizes the answer sheet then calculates the
             grade.
           </p>
           <p>
-            <strong> Intern at IBM (July 2015 – July 2015):</strong> Many
+            <strong> Intern at IBM (July 2015 - July 2015):</strong> Many
             IT-related problems. I choose it as I wanted to work with something
             different than programming to challenge myself with something new.
           </p>
