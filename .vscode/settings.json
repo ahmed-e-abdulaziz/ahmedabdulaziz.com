@@ -3,6 +3,9 @@
         "abdulaziz",
         "aziz",
         "ehab",
-        "hateoas"
+        "feature",
+        "hateoas",
+        "idempotency",
+        "image"
     ]
 }
