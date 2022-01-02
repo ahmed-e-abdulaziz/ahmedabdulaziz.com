@@ -23,7 +23,7 @@ Basically, for HTTP API design, when an idempotent API is called twice with the 
 
 The reason a client would call the server twice might mostly not be because a user clicked a button two times. It is attributed more to network failures. For example, if an acknowledgment response for the update is **NOT** returned because of a network failure, the client might automatically send the same request again. Since from its point of view, the update request itself hasn't arrived at the server.
 
-![Non-Idempotent Requests versus Idempotent requests](/uploads/IdempotentVsNonIdempotent.png)
+![Non-Idempotent Requests versus Idempotent requests](/uploads/NonIdempVsIdemp.png)
 
 ## Safe vs Idempotent
 
