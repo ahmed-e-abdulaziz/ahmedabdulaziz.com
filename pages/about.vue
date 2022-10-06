@@ -25,8 +25,8 @@
           <p>Phone Number: <a href="tel:+201114734723">+201114734723</a></p>
           <p>
             Email:
-            <a href="mailto:ahmed.ehab.abdulaziz@gmail.com">
-              ahmed.ehab.abdulaziz@gmail.com
+            <a href="mailto:ahmed.ehab5010@gmail.com">
+              ahmed.ehab5010@gmail.com
             </a>
           </p>
           <p>

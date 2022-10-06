@@ -9,7 +9,7 @@ import theCMS from '../cms/netlify/cms'
  * General Site configurations
  */
 export default {
-  siteName: 'Ahmed Abdul-Aziz Blog',
+  siteName: "Ahmed's Blog",
   tagline:
     'A blog about software development, software architecture and new technologies.',
   featureImage: '/uploads/home-hero.jpg',

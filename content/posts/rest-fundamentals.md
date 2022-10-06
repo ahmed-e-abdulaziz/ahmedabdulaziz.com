@@ -3,7 +3,7 @@ title: REST Fundamentals
 subtitle: The Why, What and How of REST
 category:
   - REST
-author: Ahmed Abdul-Aziz
+author: Ahmed Ehab
 date: 2021-02-18T06:45:56.800Z
 featureImage: /uploads/rest-fundamentals-hero.jpg
 ---
@@ -75,14 +75,14 @@ Having a uniform interface is a must in REST architectural style, this enables e
    ```json
     {
       "id": 1,
-      "name": "Ahmed Abdulaziz",
-      "email": "ahmed.ehab.abdulaziz@gmail.com",
+      "name": "Ahmed Ehab",
+      "email": "ahmed.ehab5010@gmail.com",
       "_links": {
           "self": {
-              "href": "https://ahmedabdulaziz.com/users/1"
+              "href": "https://ahmedehab.com/users/1"
           },
           "report": {
-              "href": "https://ahmedabdulaziz.com/users/1/report"
+              "href": "https://ahmedehab.com/users/1/report"
           }
       }
     }

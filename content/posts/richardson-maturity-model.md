@@ -61,22 +61,22 @@ When we get the users from `/users` endpoint with `GET` HTTP verb the response f
   {
     "id": 1,
     "name": "Ahmed Ehab Abdulaziz",
-    "email": "ahmed.ehab.abdulaziz@gmail.com",
+    "email": "ahmed.ehab5010@gmail.com",
     "links": {
       "self": {
-        "href": "https://ahmedabdulaziz.com/user/1"
+        "href": "https://ahmedehab.com/user/1"
       },
       "update": {
-        "href": "https://ahmedabdulaziz.com/user/1"
+        "href": "https://ahmedehab.com/user/1"
       },
       "delete": {
-        "href": "https://ahmedabdulaziz.com/user/1"
+        "href": "https://ahmedehab.com/user/1"
       },
       "report": {
-        "href": "https://ahmedabdulaziz.com/user/1/report/default"
+        "href": "https://ahmedehab.com/user/1/report/default"
       },
       "tax-report": {
-        "href": "https://ahmedabdulaziz.com/user/1/report/tax"
+        "href": "https://ahmedehab.com/user/1/report/tax"
       }
     }
   }
@@ -86,7 +86,7 @@ When we get the users from `/users` endpoint with `GET` HTTP verb the response f
 As you can see, we don't need to have the update, delete, report or tax-report actions to be hardcoded in our code.
 When we get the users array, we will be getting the API to do the various actions with the endpoint per user through the response as in the example.
 
-I don't want to go over HATEOAS a lot as it deserves its article so you can find more about it in [my article here](https://ahmedabdulaziz.com/hateoas).
+I don't want to go over HATEOAS a lot as it deserves its article so you can find more about it in [my article here](https://ahmedehab.com/hateoas).
 
 Lastly, this level is of course considered to be RESTful by everyone including **Roy Fielding**, [who consider it as a prerequisite to having a RESTful API](https://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven).
 

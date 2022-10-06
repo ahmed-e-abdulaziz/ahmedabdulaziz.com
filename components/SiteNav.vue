@@ -5,15 +5,15 @@
     aria-label="main navigation"
   >
     <div class="navbar-brand">
-      <nuxt-link class="navbar-item" to="/" aria-label="Ahmed Abdul-Aziz">
+      <nuxt-link class="navbar-item" to="/" aria-label="Ahmed Ehab">
         <svg height="40" width="300">
           <style>
             .heavy {
               font: bold 30px sans-serif;
             }
           </style>
-          <text x="20" y="35" fill="black" class="heavy">Ahmed Abdul-Aziz</text>
-          Ahmed Abdul-Aziz.
+          <text x="20" y="35" fill="black" class="heavy">Ahmed Ehab</text>
+          Ahmed Ehab.
         </svg>
       </nuxt-link>
       <hamburger-button @click="active = !active" />
