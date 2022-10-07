@@ -3,7 +3,7 @@ title: Richardson Maturity Model
 subtitle: How mature is your REST API? RMM answers that!
 category:
   - REST
-author: Ahmed Abdul-Aziz
+author: Ahmed Ehab
 date: 2021-02-18T06:45:56.800Z
 featureImage: /uploads/richardson-maturity-model-hero.jpg
 ---
