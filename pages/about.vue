@@ -11,7 +11,7 @@
           <h2>Who am I?</h2>
           <p>
             I am Ahmed Ehab Abdul-Aziz. I am a Senior Full-Stack Engineer with
-            4+ YoE mostly in the Spring stack and a Computer Science
+            5+ YoE mostly in the Spring stack and a Computer Science
             graduate/enthusiast. I have worked in both startups and enterprises
             and I value companies that can embrace the startup spirit but
             enforces quality enterprise guidelines.
@@ -50,12 +50,10 @@
             Redis, Jenkins, Kubernetes, Apache HTTPD, Linux, JSF/PrimeFaces,
             JSP, Angular 2+, HTML/CSS, SQL, PostgreSQL, MySQL, Oracle DB, Git,
             Maven, Mockito, PowerMock, TestNG, JUnit, RESTful, JavaScript,
-            Prometheus, Grafana, PromQL, Cortex, Liquibase.
+            Prometheus, Grafana, PromQL, Cortex, Liquibase, AWS.
           </p>
 
-          <p>
-            <strong>Trained in:</strong> Consul, AWS, Vue.js, Keycloak, Jest.
-          </p>
+          <p><strong>Trained in:</strong> Consul, Vue.js, Keycloak, Jest.</p>
           <p>
             <strong>Software Engineering:</strong> UML, OOP, TDD, MVC, Agile
             Methodology (Scrum/Kanban), Observability, OWASP, OAuth 2.0,
