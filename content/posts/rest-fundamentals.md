@@ -15,10 +15,9 @@ REST enforces a good separation of concerns between clients and servers. The mor
 
 ## What is REST?
 
-REST :
-Stands for **RE**presentational **S**tate **T**ransfer. It was first defined in the year 2000. It is an architectural style that standardizes communication between web services and systems. To say we have REST web services, we must follow the REST standards (i.e., become RESTful).
+REST: Stands for **RE**presentational **S**tate **T**ransfer. Firstly defined in the year 2000. It is an architectural style that standardizes communication between web services and systems. To say we have REST web services, we must follow the REST standards (i.e., become RESTful).
 
-REST became wildly popular as a replacement for SOAP protocols requiring a lengthier set of requirements to be used. However, it must be noted that REST ***doesn't dictate what protocol is used to transfer data***. It focuses instead on the architecture of endpoints and how to name them. Thus, it's a software architecture/pattern, not a protocol. Nonetheless, HTTP is recommended as the go-to protocol to apply REST, but you can use it with other protocols like MQTT.
+REST became wildly popular as a replacement for SOAP protocols requiring a lengthier set of requirements. However, note that REST ***doesn't dictate the data transfer protocol***. It focuses instead on the architecture of endpoints and how to name them. Thus, it's a software architecture/pattern, not a protocol. Nonetheless, HTTP is recommended as the go-to protocol to apply REST, but you can use it with other protocols like MQTT.
 
 ## How to apply REST
 
@@ -60,17 +59,17 @@ Having a uniform interface is a must in the REST architectural style. This enabl
 
 3. **Self-descriptive messages**
 
-    This means the response message should describe itself with no requirement to go back to the backend to retrieve the message's meaning. For example, if a file is returned in a binary format, an attribute must be attached to explain the file type. If the response is in JSON, an attribute must exist to explain it's in JSON.
+    The response message should describe itself with no requirement to go back to the backend to retrieve the message's meaning. For example, an attribute must be attached to explain the file type if a file is returned in a binary format. If the response is in JSON, an attribute must exist to explain it's in JSON.
 
     In HTTP-based REST APIs, `https://example.com/annual-report/`, the response must have a media type header that explains that the returning blob is a pdf like this `Content-Type: application/pdf`.
 
-Also, in HTTP, the response should have a status code that describes the state of this response, whether it's an error or a successful one, like response 200 (OK) or 400 (BAD REQUEST).
+    Also, in HTTP, the response should have a status code that describes the state of this response, whether it's an error or a successful one, like response 200 (OK) or 400 (BAD REQUEST).
 
 4. **Hypermedia as the engine of application state (HATEOAS)**
 
-   HATEOAS simply requires that when requesting a URI for a REST endpoint, the response should include links provided by the backend to dynamically discover all available resources in the response.
+   HATEOAS requires that when requesting a URI for a REST endpoint, the response should include links provided by the backend to discover all available resources in the response dynamically.
 
-   This leads to the client being wholly coupled from the backend endpoints leading to more freedom in changing the backend structure and endpoints.
+   This leads to a decoupled client from the backend endpoints leading to more freedom in changing the backend structure and endpoints.
 
    ```json
     {
@@ -92,6 +91,4 @@ Also, in HTTP, the response should have a status code that describes the state o
 
 ## Richardson Maturity Model
 
-This is a maturity model described by Leonard Richardson in 2008. It tells how much an application adheres to REST specifications and puts it in one of four levels.
-
-This model is well suited to show us how much our endpoints conform to the REST architectural style, so it can state that our API is not a fully mature REST API, but it can still be considered a REST endpoint, though. As with HATEOES earlier, this is a lengthy subject that I will probably write a post about in the future but not right now to keep this post short.
+RMM is a maturity model described by Leonard Richardson in 2008. It tells how much an application adheres to REST specifications and puts it in one of four levels.This model is well suited to show us how much our endpoints conform to the REST architectural style, so it can state that our API is not a fully mature REST API, but partially a REST endpoint.

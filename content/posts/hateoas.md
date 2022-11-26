@@ -105,7 +105,7 @@ Now we can change the endpoints from `/users/` to `/user/` and add a new report 
 
 ```
 
-Another step we can do is to add the HTTP method used for each link to further reduce coupling. This is different from the REST standards, though.
+Another step we can do is to add the HTTP method used for each link to reduce coupling further. This is different from the REST standards, though.
 
 ``` json
 {
@@ -118,7 +118,7 @@ Another step we can do is to add the HTTP method used for each link to further r
 
 That can lead to, for example, changing the PUT for the update action to PATCH without breaking any changes. Nonetheless, that last step is not HATEOAS compliant.
 
-The recommended way to do this is to keep the older structure where there is only `"href"` in action and send an `OPTIONS` request before sending the request to get the required HTTP method. Both ways are favored by some people. As a matter of fact, **Roy T. Fielding**, the creator of REST [was one of the creators of the OPTIONS request](https://lists.w3.org/Archives/Public/ietf-http-wg-old/1997SepDec/0376.html).
+The recommended way to do this is to keep the older structure where there is only `"href"` in action and send an `OPTIONS` request before sending the request to get the required HTTP method. Each way has its fans. **Roy T. Fielding**, the creator of REST [was one of the creators of the OPTIONS request](https://lists.w3.org/Archives/Public/ietf-http-wg-old/1997SepDec/0376.html).
 
 Some Architects even prefer to keep the HTTP method coupled as they see that the role of HATEOAS is to follow a standard to decouple the URIs since HATEOAS is part of having a Uniform Interface for REST. So we have to get back to the API documentation to recognize the HTTP verb.
 
